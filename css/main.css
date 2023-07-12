@@ -1,0 +1,528 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+@media screen and (max-width: 760px) {
+    * {
+        box-sizing: content-box;
+    }
+
+    /* define body color and position*/
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 1%;
+        background-color: #C7F1EB;
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerright {
+        display: flex;
+        margin-left: auto;
+        margin-right: 10px;
+        gap: 25px;
+    }
+
+    /*make a round logo at the website*/
+    .logo a {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .logo {
+        margin-left: 10px;
+        transform: rotateY(360deg);
+        transition: 5s;
+    }
+
+    .headerright a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #search{
+        display: none;
+    }
+
+    /*nav bar position*/
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        flex: 1;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    ul li a {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.25rem;
+    }
+
+
+    .content-container {
+        overflow-x: scroll;
+    }
+
+    .col-container {
+        white-space: nowrap;
+    }
+
+    .col-container img {
+        display: inline-block;
+    }
+
+
+    .bottle {
+        display: flex;
+        align-items: center;
+        gap: 180px;
+        padding-left: auto;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    .link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-text {
+        order: 1;
+    }
+
+    .bottle a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    /* add a animation when hover on bottle, it will bigger*/
+    .bottle a:hover {
+        transform: scale(3);
+        animation-name: bzd;
+        animation-duration: 1s;
+        /* Add animation duration */
+        animation-fill-mode: forwards;
+        /* Add animation fill mode */
+        animation-iteration-count: 1;
+        /* Add animation iteration count */
+    }
+
+
+    @keyframes bzd {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(2);
+        }
+    }
+
+
+
+    /*make all bottle take 50% of the contanier*/
+    .bottle a:nth-child(1) {
+        flex-basis: calc(50% - 4px);
+    }
+
+    .bottle a:nth-child(2) {
+        flex-basis: calc(50% - 4px);
+    }
+
+
+    .mais {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+
+    }
+
+    .loo {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+
+    nav ul li a:hover,
+    /*when the user hovers their mouse over the link*/
+    nav ul li a:focus {
+        background-color: rgb(105, 124, 219);
+    }
+
+
+
+    .about,
+    .special {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .about h1,
+    .special h1 {
+        font-size: 2rem;
+    }
+
+    .about p,
+    .special p {
+        margin-top: 5%;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    /*set form size and position*/
+    form input,
+    form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: .5rem 0.5rem;
+    }
+
+    form textarea {
+        min-height: 150px;
+        max-height: 150px;
+        height: 150px;
+        resize: none;
+    }
+
+    form button {
+        background: #21887E;
+        border: 2px solid black;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+
+    form {
+        padding: 55px;
+    }
+
+    .con h2 {
+        margin-bottom: 2%;
+    }
+
+    .con {
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: content-box;
+}
+
+/* define body color and position*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 1%;
+    background-color: #C7F1EB;
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.headerright {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    gap: 25px;
+}
+
+/*make a round logo at the website*/
+.logo a {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.logo {
+    margin-left: 10px;
+    transform: rotateY(360deg);
+    transition: 5s;
+}
+
+.headerright a {
+    text-decoration: none;
+    color: black;
+}
+
+/*nav bar position*/
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    flex: 1;
+    text-align: center;
+    margin-top: 5%;
+}
+
+ul li a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.content-container{
+    display: flex;
+}
+
+.col-container{
+    margin: 1%;
+}
+
+
+
+.bottle {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    padding-left: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-text {
+    order: 1;
+}
+
+.bottle a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+/* add a animation when hover on bottle, it will bigger*/
+.bottle a:hover {
+    transform: scale(3);
+    animation-name: bzd;
+    animation-duration: 1s;
+    /* Add animation duration */
+    animation-fill-mode: forwards;
+    /* Add animation fill mode */
+    animation-iteration-count: 1;
+    /* Add animation iteration count */
+}
+
+
+@keyframes bzd {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+
+
+/*make all bottle take 50% of the contanier*/
+.bottle a:nth-child(1) {
+    flex-basis: calc(50% - 4px);
+}
+
+.bottle a:nth-child(2) {
+    flex-basis: calc(50% - 4px);
+}
+
+
+.mais {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+
+footer p {
+    font-size: 1.25rem;
+
+}
+
+.loo {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+nav ul li a:hover,
+/*when the user hovers their mouse over the link*/
+nav ul li a:focus {
+    background-color: rgb(105, 124, 219);
+}
+
+
+
+
+
+.about,
+.special {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.about h1,
+.special h1 {
+    font-size: 2rem;
+}
+
+.about p,
+.special p {
+    margin-top: 5%;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/*set form size and position*/
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem 0.5rem;
+}
+
+form textarea {
+    min-height: 150px;
+    max-height: 150px;
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    background: #21887E;
+    border: 2px solid black;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+form {
+    padding: 55px;
+}
+
+.con h2 {
+    margin-bottom: 2%;
+}
+
+.con {
+    margin-bottom: 5%;
+}
+
+hr{
+    border: none;
+  border-top: 2px solid black;
+}

@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/41996d43a2.js" crossorigin="anonymous"></script>
+    <title>Mais Bubble Tea Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&amp;family=Stick+No+Bills:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    hollo world
+    <div class="wrapper">
+        <header role="banner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo" 
+                    srcset="images/logo-640.png 640w,
+                            images/logo-960.png 960w"
+                    sizes=" (max-width: 640px) 640px,
+                            (max-width: 960px) 960px">
+                  </a>
+            </div>       
+            <a href="#maincontent" class="jtmc">Jump To Buy &darr;</a>     
+              <!-- Creating a search section -->
+            <div class="headerright">
+                <div class="search">
+                    <input id="search" name="search" type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                </div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="https://www.login.com">Log in</a>
+            </div>
+        </header>
+
+        <main role="main">
+            <div class="nav">
+                <nav role="navigation">
+                    <!--unordered list, list all the content link-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <hr>
+            <!--put all the images in the same section-->
+            <div class="content-container">
+             <div class="content-container"></div>
+              <div class="col-container">
+                <img src="images/1.png" alt="bubble1">
+                <img src="images/2.png" alt="bubble2">
+                
+                <img src="images/3.png" alt="bubble3">
+
+                <img src="images/4.png" alt="bubble4">
+              </div>
+            </div>
+            <hr>
+
+            <!--creat a link to the images-->
+            <div class="bottle" id="maincontent">
+                  <a href="pickup.html">
+                    <div class="link-container">
+                    <img src="images/lvse.png" alt="greenbottle"> 
+                    <span class="link-text">Pick - up</span>
+                </div>
+                  </a>
+
+                  <a href="delivery.html">
+                    <div class="link-container">
+                    <img src="images/zise.png" alt="purplebottl"> 
+                    <span class="link-text">Delivery</span>
+                </div>
+                  </a>
+            </div>
+        </main>
+            <hr>
+            <footer role="contentinfo">
+                <!--footer link to the target page-->
+                <p>Mais</p>
+                <ul class="mais">
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="Carees.html" >Carees</a></li>
+                    <li><a href="giftcard.html" >Gift Cardt</a></li>
+                </ul>
+                <p>Get Help</p>
+                <ul class="mais">
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="tracking.html" >Tracking</a></li>
+                    <li><a href="ourservices.html" >Our Services</a></li>
+                </ul>
+                <div class="loo">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/ins.png" alt="ins">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/face.png" alt="facebook">
+                </a>
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="images/google.png" alt="google">
+                </a>
+
+            </div>
+                <p>&copy;Mais tea 2023.</p> 
+            </footer>
+    </div>
 </body>
-</html>
